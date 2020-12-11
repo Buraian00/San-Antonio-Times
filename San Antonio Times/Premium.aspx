@@ -9,7 +9,6 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label runat="server" Text="vo soy premium" ID="lblPremium"></asp:Label>
             <br />
             <asp:Label runat="server" Text="" ID="lblnivel"></asp:Label>
             <br />

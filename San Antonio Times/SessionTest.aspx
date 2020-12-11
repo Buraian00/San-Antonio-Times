@@ -9,15 +9,23 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label runat="server" Text="NO ENTRO" ID="lblSession"></asp:Label>
-            <br />
             <asp:Label runat="server" Text="errornivel" ID="lblNivel"></asp:Label>
             <br />
-            <asp:Label runat="server" Text="errorfecha" ID="lblFecha"></asp:Label>
+            <asp:Label runat="server" Text="Fecha de la creacion de la cuenta:"></asp:Label>
+            <asp:Label runat="server" Text="errorfechaCreacion" ID="lblcreacion"></asp:Label>
             <br />
-            <asp:Label runat="server" Text="Bienvenido:"></asp:Label>
+            <asp:Label runat="server" Text="Su nombre es:"></asp:Label>
             <asp:Label runat="server" Text="erroruser" ID="lblUser"></asp:Label>
-
+                        <br />
+            <asp:Label runat="server" Text="Fecha de cuando empieza su suscripcion:"></asp:Label>
+            <asp:Label runat="server" Text="errorfechainicio" ID="lblinicio"></asp:Label>
+                        <br />
+            <asp:Label runat="server" Text="Fecha de cuando termina su suscripcion:"></asp:Label>
+            <asp:Label runat="server" Text="errorfechatermino" ID="lbltermino"></asp:Label>
+                        <br />
+            <asp:Label runat="server" Text="Su correo es:"></asp:Label>
+            <asp:Label runat="server" Text="errorcorreo" ID="lblcorreo"></asp:Label>
+            <a href="Premium.aspx">pagina premium</a>
         </div>
     </form>
 </body>

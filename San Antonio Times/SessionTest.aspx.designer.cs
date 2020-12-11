@@ -22,15 +22,6 @@ namespace San_Antonio_Times {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lblSession control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSession;
-        
-        /// <summary>
         /// lblNivel control.
         /// </summary>
         /// <remarks>
@@ -40,13 +31,13 @@ namespace San_Antonio_Times {
         protected global::System.Web.UI.WebControls.Label lblNivel;
         
         /// <summary>
-        /// lblFecha control.
+        /// lblcreacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFecha;
+        protected global::System.Web.UI.WebControls.Label lblcreacion;
         
         /// <summary>
         /// lblUser control.
@@ -56,5 +47,32 @@ namespace San_Antonio_Times {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblUser;
+        
+        /// <summary>
+        /// lblinicio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblinicio;
+        
+        /// <summary>
+        /// lbltermino control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbltermino;
+        
+        /// <summary>
+        /// lblcorreo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblcorreo;
     }
 }

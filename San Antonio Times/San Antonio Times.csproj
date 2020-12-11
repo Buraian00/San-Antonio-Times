@@ -583,7 +583,9 @@
     <Content Include="Site.Master" />
     <Content Include="Style.css" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
@@ -591,6 +593,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Class\Connexion.cs" />
+    <Compile Include="Class\Usuario.cs" />
     <Compile Include="Galeria_Gratis_Abierto.aspx.cs">
       <DependentUpon>Galeria_Gratis_Abierto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -22,15 +22,6 @@ namespace San_Antonio_Times {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lblPremium control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPremium;
-        
-        /// <summary>
         /// lblnivel control.
         /// </summary>
         /// <remarks>

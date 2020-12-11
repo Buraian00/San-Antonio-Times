@@ -19,32 +19,27 @@ namespace San_Antonio_Times
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            Connexion conex = new Connexion();
-            //MySqlConnection conn = new MySqlConnection("server=MYSQL5034.site4now.net; database=db_a6ac79_login; Uid=a6ac79_login; pwd=odioesto90");
-            MySqlConnection conn = conex.getConexion();
-            conn.Open();
 
-            MySqlConnection conectanos = new MySqlConnection();
-            
-            String correo = this.txtCorreo.Text;
-            String pass = this.txtPassword.Text;
-            String query = ("select * from usuarios where correo= @correo and pass= sha2(CONCAT(@password, (SELECT salt FROM USUARIOS WHERE CORREO = @correo)), 256)"); ;
-            MySqlCommand comando = new MySqlCommand(query, conn);
-            comando.Parameters.Add(new MySqlParameter("@correo", correo));
-            comando.Parameters.Add(new MySqlParameter("@password", pass));
-            MySqlDataReader leer = comando.ExecuteReader();
+            Usuario usu = new Usuario();
+            string correo = this.txtCorreo.Text;
+            string password = this.txtPassword.Text;
+            int estado = usu.validarUsuario(correo,password);
 
-            if (leer.Read())   //leer.Read() me arrojaba error, asique lo cambie a leer.HasRows
+            if (estado == 0) 
             {
-                Session["correo"] = correo;
+                Session["correo"] = usu.getUsuData(correo).correo;
+                Session["usuario"] = usu.getUsuData(correo).nombreUsuario;
+                Session["nivel"] = usu.getUsuData(correo).nivel;
+                Session["fechaCreacion"] = usu.getUsuData(correo).fechaCreacion;
+                Session["fechaInicioSus"] = usu.getUsuData(correo).fechaInicioSus;
+                Session["fechaTerminoSus"] = usu.getUsuData(correo).fechaTerminoSus;
+
                 Response.Redirect("SessionTest.aspx");
             }
             else
             {
                 Response.Redirect("Registrar.aspx");
             }
-            conn.Close();
-
         }
     }
 }
